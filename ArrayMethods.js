@@ -1,23 +1,25 @@
-
 const details = [
-    {
-        fname:"vignesh",
-        lname:"guru",
-        place:"ponneri"
-    },{
-        fname:"Adhitiya",
-        lname:"",
-        place:"tiruvallur"
-    },{
-        fname:"Keerthi",
-        lname:"vasan",
-        place:"ponneri"
-    },{
-        fname:"monish",
-        lname:"kumar",
-        place:"minjur"
-    },
-]
+  {
+    fname: "vignesh",
+    lname: "guru",
+    place: "ponneri",
+  },
+  {
+    fname: "Adhitiya",
+    lname: "",
+    place: "tiruvallur",
+  },
+  {
+    fname: "Keerthi",
+    lname: "vasan",
+    place: "ponneri",
+  },
+  {
+    fname: "monish",
+    lname: "kumar",
+    place: "minjur",
+  },
+];
 
 //filter
 
@@ -29,7 +31,6 @@ const details = [
 
 //console.log("filterplace",placeDetail);//output:filterplace[{ fname: 'vignesh', lname: 'guru', place: 'ponneri' },{ fname: 'Keerthi', lname: 'vasan', place: 'ponneri' }]
 
-
 //map
 
 // const fname = details.map(detail=>detail.fname)
@@ -37,7 +38,6 @@ const details = [
 
 // const place  = details.map(detail=>detail.place)
 // console.log("place",place);//output: place [ 'ponneri', 'tiruvallur', 'ponneri', 'minjur' ]
-
 
 //find
 
@@ -47,8 +47,10 @@ const details = [
 // const findLastName = details.find(detail=>detail.lname=="kumar");
 // console.log('findall',findLastName)//findall { fname: 'monish', lname: 'kumar', place: 'minjur' }
 
-
 //foreach
 
+// const findingNames = details.forEach((detail) => {
+//   console.log(detail.fname);
+// });
 
 
