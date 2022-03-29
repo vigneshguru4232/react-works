@@ -85,6 +85,6 @@ const totalmarks = details.forEach((detail) => {
     console.log(total);
   }
   
-  sum(4,7);
+  sum();
   
 });
