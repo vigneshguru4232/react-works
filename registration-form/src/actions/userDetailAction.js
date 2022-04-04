@@ -2,7 +2,7 @@ import { FETCH_USERDETAIL, NEW_USERDETAIL } from "./constants"
 
 
 export const newUserDetail = (userData) => dispatch=>{
-    console.log("created",userData)
+    // console.log("created",userData)
     dispatch({
         type:FETCH_USERDETAIL,
         payload:userData

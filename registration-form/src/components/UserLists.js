@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { newUserDetail } from "../actions/userDetailAction";
 import {connect} from "react-redux";
 import { v4 as uuidv4 } from 'uuid';
+import PropTypes from "prop-types";
 
  class UserLists extends Component {
    
@@ -24,6 +25,18 @@ import { v4 as uuidv4 } from 'uuid';
 const mapStateToProps = (state)=>({
     users:state.userDetails.users
   })
-  
+
+  UserLists.propTypes ={
+    users: PropTypes.arrayOf(
+      PropTypes.exact({
+        fullName: PropTypes.string,
+        email: PropTypes.string,
+        gender: PropTypes.string,
+        department: PropTypes.string,
+        phone: PropTypes.string,
+        description: PropTypes.string,
+      })
+    ),
+  }
  
 export default connect(mapStateToProps,{newUserDetail})(UserLists);
